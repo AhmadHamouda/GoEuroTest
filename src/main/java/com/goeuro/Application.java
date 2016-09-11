@@ -33,12 +33,11 @@ public class Application {
     private static String CITYNAME;
 
     public static void main(String args[]) throws Exception {
-//        if (args.length == 0 || args[0].equals("")) {
-//            throw new NotFoundParamater();
-//        } else {
-//            CITYNAME = args[0];
-            CITYNAME = "Berlin";
-//        }
+        if (args.length == 0 || args[0].equals("")) {
+            throw new NotFoundParamater();
+        } else {
+            CITYNAME = args[0];
+        }
         SpringApplication.run(Application.class);
     }
 
